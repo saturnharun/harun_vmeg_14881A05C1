@@ -243,11 +243,7 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public int getCurrentAgeByDate(int indexOfStudent) {
 		// Add your implementation here
-		/*Date d= new Date();
-		if(indexOfStudent<0 || indexOfStudent>=this.students.length){
-			throw new IllegalArgumentException("illegal Argument");
-		}
-		return Math.abs(this.students[indexOfStudent].getBirthDate().getYear()- d.getYear());*/
+		
 		return 0;
 	}
 
@@ -293,9 +289,9 @@ public class StudentGroup implements StudentArrayOperation {
 		if(index<this.students.length-1){
 			return this.students[index+1];
 		}
-		else{
+	
 			return null;
-		}
+	
 		
 	}
 }
