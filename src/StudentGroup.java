@@ -211,9 +211,9 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here
-		for(int i=0;i<this.students.length;i++){
-			for(int j=0;j<this.students.length-i-1;j++){
-				if(this.students[j].getId()>this.students[j+1].getId()){
+		for(int i=0;i<this.students.length-1;i++){
+			for(int j=i+1;j<this.students.length;j++){
+				if(this.students[j].getId()>this.students[j-1].getId()){
 					Student t= this.students[j];
 					this.students[j]=this.students[j+1];
 					this.students[j+1]=t;
