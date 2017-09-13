@@ -215,8 +215,8 @@ public class StudentGroup implements StudentArrayOperation {
 			for(int j=i+1;j<this.students.length;j++){
 				if(this.students[j].getId()>this.students[j-1].getId()){
 					Student t= this.students[j];
-					this.students[j]=this.students[j+1];
-					this.students[j+1]=t;
+					this.students[j]=this.students[j-1];
+					this.students[j-1]=t;
 				}
 			}
 		}
